@@ -19,14 +19,15 @@ This is my personal portfolio website built using Tailwind CSS, Vite, React, and
 # Getting Started
 1. Clone this repository using `git clone https://github.com/fenn96/3d-portfolio.git`
 2. Install dependencies using `npm install`
-3. Create a .env file in the src directory with the following environment variables:
+3. Create an account/template at https://emailjs.com
+4. Create a .env file in the src directory with the following environment variables:
 ```
 VITE_APP_EMAILJS_SERVICE_ID=<EmailJS_Service_ID>
 VITE_APP_EMAILJS_TEMPLATE_ID=<EmailJS_Template_ID>
 VITE_APP_EMAILJS_PUBLIC_KEY=<EmailJS_Public_Key>
 ```
-4. Run the app using `npm run dev`
-5. Open http://localhost:5173 to view it in the browser
+5. Run the app using `npm run dev`
+6. Open http://localhost:5173 to view it in the browser
 
 # How to Use
 The website is divided into multiple sections, including a home page, about page, projects page, and contact page. You can use the navigation menu to switch between these pages.
