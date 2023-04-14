@@ -32,8 +32,8 @@ const Contact = () => {
 
     emailjs
       .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         {
           from_name: form.name,
           to_name: "Christian",
@@ -41,7 +41,7 @@ const Contact = () => {
           to_email: "cfenn2020@fau.edu",
           message: form.message,
         },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       )
       .then(
         () => {
@@ -87,6 +87,7 @@ const Contact = () => {
               value={form.name}
               onChange={handleChange}
               placeholder="What's your name?"
+              required
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white
               rounded-lg outlined-none border-none font-medium'
             />
@@ -102,6 +103,7 @@ const Contact = () => {
               value={form.email}
               onChange={handleChange}
               placeholder="What's your email?"
+              required
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white
               rounded-lg outlined-none border-none font-medium'
             />
@@ -117,6 +119,7 @@ const Contact = () => {
               value={form.message}
               onChange={handleChange}
               placeholder="What do you want to say?"
+              required
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white
               rounded-lg outlined-none border-none font-medium'
             />
