@@ -86,7 +86,7 @@ const Contact = () => {
               name='name'
               value={form.name}
               onChange={handleChange}
-              placeholder="What's your name?"
+              placeholder="First Last"
               required
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white
               rounded-lg outlined-none border-none font-medium'
@@ -102,7 +102,7 @@ const Contact = () => {
               name='email'
               value={form.email}
               onChange={handleChange}
-              placeholder="What's your email?"
+              placeholder="example@domain.com"
               required
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white
               rounded-lg outlined-none border-none font-medium'
@@ -118,7 +118,7 @@ const Contact = () => {
               name='message'
               value={form.message}
               onChange={handleChange}
-              placeholder="What do you want to say?"
+              placeholder="What project can I help you with?"
               required
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white
               rounded-lg outlined-none border-none font-medium'
